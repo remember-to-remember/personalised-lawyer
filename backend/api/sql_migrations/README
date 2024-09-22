@@ -1,0 +1,15 @@
+Generic single-database configuration.
+
+```sh
+# create new migration script comparing with ./local/local.sqlite3 database
+alembic -c backend/api/sql_migrations/alembic.ini revision --autogenerate -m"initial version"
+
+# upgrade to latest version
+alembic -c backend/api/sql_migrations/alembic.ini upgrade head
+
+# downgrade one version
+alembic -c backend/api/sql_migrations/alembic.ini downgrade -1
+
+# downgrade to base version
+alembic -c backend/api/sql_migrations/alembic.ini downgrade base
+```

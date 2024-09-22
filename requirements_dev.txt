@@ -1,0 +1,7 @@
+pur
+black[jupyter]
+pylint
+pyclean
+dockerignore-generate
+jupyter[ipywidgets]
+ipykernel
